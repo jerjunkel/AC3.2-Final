@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        //Root view 
+        let rootTabController = UITabBarController()
+        //let loginViewController = LoginViewController()
+        let uploadViewController = UploadViewController()
+        let feedViewController = FeedTableViewController()
+        
+        
+        let feedTabItem: UITabBarItem = UITabBarItem(title: "Feed", image: UIImage(named: "chickenleg"), tag: 0)
+        let uploadTabItem: UITabBarItem = UITabBarItem(title: "Upload", image: UIImage(named: "upload"), tag: 1)
+        
+        feedViewController.tabBarItem = feedTabItem
+        uploadViewController.tabBarItem = uploadTabItem
+        let feedNavController: UINavigationController = UINavigationController(rootViewController: feedViewController)
+        
+        let uploadNavController: UINavigationController = UINavigationController(rootViewController: uploadViewController)
+        rootTabController.viewControllers = [feedNavController,uploadNavController]
+        
+        window?.rootViewController = rootTabController
+        
+        window?.makeKeyAndVisible()
+        
+        
+        
         return true
     }
 

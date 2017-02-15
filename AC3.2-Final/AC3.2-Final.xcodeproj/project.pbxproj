@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AA994361E54B10E0050CB6E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA994351E54B10E0050CB6E /* LoginViewController.swift */; };
+		1AA994381E54B11F0050CB6E /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA994371E54B11F0050CB6E /* FeedTableViewController.swift */; };
+		1AA9943A1E54B14C0050CB6E /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA994391E54B14C0050CB6E /* UploadViewController.swift */; };
+		1AA9943C1E54BCE80050CB6E /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9943B1E54BCE80050CB6E /* FeedTableViewCell.swift */; };
+		1AA9943E1E54D1F60050CB6E /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9943D1E54D1F60050CB6E /* Utilites.swift */; };
+		1AA994401E54DA550050CB6E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9943F1E54DA550050CB6E /* Post.swift */; };
 		1EA112FF1E53C0B1004B66E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA112FE1E53C0B1004B66E3 /* AppDelegate.swift */; };
-		1EA113011E53C0B1004B66E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA113001E53C0B1004B66E3 /* ViewController.swift */; };
-		1EA113041E53C0B1004B66E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA113021E53C0B1004B66E3 /* Main.storyboard */; };
 		1EA113061E53C0B1004B66E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EA113051E53C0B1004B66E3 /* Assets.xcassets */; };
 		1EA113091E53C0B1004B66E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA113071E53C0B1004B66E3 /* LaunchScreen.storyboard */; };
 		1EA113131E53C130004B66E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EA113121E53C130004B66E3 /* GoogleService-Info.plist */; };
@@ -17,10 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AA994351E54B10E0050CB6E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1AA994371E54B11F0050CB6E /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		1AA994391E54B14C0050CB6E /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		1AA9943B1E54BCE80050CB6E /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		1AA9943D1E54D1F60050CB6E /* Utilites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
+		1AA9943F1E54DA550050CB6E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1EA112FB1E53C0B1004B66E3 /* AC3.2-Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC3.2-Final.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA112FE1E53C0B1004B66E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1EA113001E53C0B1004B66E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1EA113031E53C0B1004B66E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EA113051E53C0B1004B66E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EA113081E53C0B1004B66E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EA1130A1E53C0B1004B66E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +50,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AA994311E54AF250050CB6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EA112FE1E53C0B1004B66E3 /* AppDelegate.swift */,
+				1AA9943D1E54D1F60050CB6E /* Utilites.swift */,
+				1EA113051E53C0B1004B66E3 /* Assets.xcassets */,
+				1EA113071E53C0B1004B66E3 /* LaunchScreen.storyboard */,
+				1EA1130A1E53C0B1004B66E3 /* Info.plist */,
+				1EA113121E53C130004B66E3 /* GoogleService-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AA994321E54AF410050CB6E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1AA994351E54B10E0050CB6E /* LoginViewController.swift */,
+				1AA994371E54B11F0050CB6E /* FeedTableViewController.swift */,
+				1AA994391E54B14C0050CB6E /* UploadViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1AA994331E54AF510050CB6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1AA9943B1E54BCE80050CB6E /* FeedTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1AA994341E54AF5B0050CB6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1AA9943F1E54DA550050CB6E /* Post.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		1EA112F21E53C0B1004B66E3 = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +110,10 @@
 		1EA112FD1E53C0B1004B66E3 /* AC3.2-Final */ = {
 			isa = PBXGroup;
 			children = (
-				1EA112FE1E53C0B1004B66E3 /* AppDelegate.swift */,
-				1EA113001E53C0B1004B66E3 /* ViewController.swift */,
-				1EA113021E53C0B1004B66E3 /* Main.storyboard */,
-				1EA113051E53C0B1004B66E3 /* Assets.xcassets */,
-				1EA113071E53C0B1004B66E3 /* LaunchScreen.storyboard */,
-				1EA1130A1E53C0B1004B66E3 /* Info.plist */,
-				1EA113121E53C130004B66E3 /* GoogleService-Info.plist */,
+				1AA994341E54AF5B0050CB6E /* Models */,
+				1AA994331E54AF510050CB6E /* Views */,
+				1AA994321E54AF410050CB6E /* View Controllers */,
+				1AA994311E54AF250050CB6E /* Supporting Files */,
 			);
 			path = "AC3.2-Final";
 			sourceTree = "<group>";
@@ -156,7 +200,6 @@
 				1EA113091E53C0B1004B66E3 /* LaunchScreen.storyboard in Resources */,
 				1EA113131E53C130004B66E3 /* GoogleService-Info.plist in Resources */,
 				1EA113061E53C0B1004B66E3 /* Assets.xcassets in Resources */,
-				1EA113041E53C0B1004B66E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,22 +258,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EA113011E53C0B1004B66E3 /* ViewController.swift in Sources */,
+				1AA994361E54B10E0050CB6E /* LoginViewController.swift in Sources */,
+				1AA9943A1E54B14C0050CB6E /* UploadViewController.swift in Sources */,
+				1AA994381E54B11F0050CB6E /* FeedTableViewController.swift in Sources */,
 				1EA112FF1E53C0B1004B66E3 /* AppDelegate.swift in Sources */,
+				1AA9943E1E54D1F60050CB6E /* Utilites.swift in Sources */,
+				1AA994401E54DA550050CB6E /* Post.swift in Sources */,
+				1AA9943C1E54BCE80050CB6E /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1EA113021E53C0B1004B66E3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1EA113031E53C0B1004B66E3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1EA113071E53C0B1004B66E3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
