@@ -47,11 +47,7 @@ class FeedTableViewController: UITableViewController,LoginProtocol {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.cellIdentifer, for: indexPath) as! FeedTableViewCell
-//        cell.alpha = 0
-//        
-//        UIView.animate(withDuration: 0.5) { 
-//            cell.alpha = 1
-//        }
+        
         cell.post = posts[indexPath.row]
         
         return cell
