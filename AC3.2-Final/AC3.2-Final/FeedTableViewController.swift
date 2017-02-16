@@ -61,6 +61,7 @@ class FeedTableViewController: UITableViewController,LoginProtocol {
     
     private func getAllPosts(){
         databaseRef?.observeSingleEvent(of: .value, with: { (snapshot) in
+            var upDatedPosts: [Post] = []
             for child in snapshot.children{
                 dump(child)
                 if let snap = child as? FIRDataSnapshot,
@@ -68,10 +69,10 @@ class FeedTableViewController: UITableViewController,LoginProtocol {
                     print(valueDict)
                     
                     let post = Post(key: snap.key, dict: valueDict)
-                    self.posts.append(post)
+                    upDatedPosts.append(post)
                 }
             }
-            
+            self.posts = upDatedPosts
             self.tableView.reloadData()
         })
     }
